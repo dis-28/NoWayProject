@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projectHeader {
+  font-family: 'Kanit', sans-serif;
+  color: #bc6c25;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.Maps {
+  width: 75%;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.satMap {
+  width: 45%;
+  height: 100%;
+  background-image: url(./Maps/satMap.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid #283618;
+  border-radius: 10px;
+
+}
+
+.outMap {
+  width: 45%;
+  height: 100%;
+  background-image: url(./Maps/outlineMap.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid #283618;
+  border-radius: 10px;
+
+}
+
+.mainContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  gap: 40px;
+  padding: 10px;
+  background-color: #fefae0;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 100px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.formButton {
+  height: 30px;
+  width: 60x;
+  border: 2px solid #606c38;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sourceForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destinationForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sourceInput {
+  width: 140px;
+  border: 2px solid #a3b18a;
+}
+
+.destinationInput {
+  width: 140px;
+  border: 2px solid #a3b18a;
+
+}
+
+.emptyBox {
+  color: black;
+}
+
+.projectDisplay {
+  width: 400px;
+  height: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
