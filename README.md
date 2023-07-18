@@ -36,7 +36,7 @@ A brief description of what this project does and who it's for
 
 **Client:** React
 
-**Server:** Flask, Puthon
+**Server:** Flask, Python
 
 
 ## Used By
@@ -50,7 +50,7 @@ This project is used by the following:
 
 #### How will obtain my shortest path from source to destination?
 
-Every possible source and destination is mapped with an number ranging from (1 to 64). Path in the application will display the nodes inorder to reach destination. 
+Every possible source and destination is mapped with a number ranging from (1 to 64). Path in the application will display the nodes in order to reach the destination. 
 
 
 
